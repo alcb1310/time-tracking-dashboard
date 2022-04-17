@@ -1,80 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Time tracking dashboard</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <title>Frontend Mentor | Time tracking dashboard</title>
 
-  Report for
-  Jeremy Robson
+    <link rel="stylesheet" href="css/style.css" />
 
-  Daily
-  Weekly
-  Monthly
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
 
-  Work
-  5hrs <!-- daily -->
-  Previous - 7hrs <!-- daily -->
-  32hrs <!-- weekly -->
-  Previous - 36hrs <!-- weekly -->
-  103hrs <!-- monthly -->
-  Previous - 128hrs <!-- monthly -->
+      .attribution {
+        color: var(--white);
+      }
 
-  Play
-  1hr <!-- daily -->
-  Previous - 2hrs <!-- daily -->
-  10hrs <!-- weekly -->
-  Previous - 8hrs <!-- weekly -->
-  23hrs <!-- monthly -->
-  Previous - 29hrs <!-- monthly -->
+      .attribution > a {
+        text-decoration: none;
+        color: inherit;
+      }
+      .attribution > a:hover {
+        text-decoration: none;
+        color: var(--blue);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <div class="character-card">
+          <div class="info">
+            <p>Report for</p>
+            <h1>Jeremy Robson</h1>
+            <img src="./images/image-jeremy.png" alt="jeremy photo" />
+          </div>
+          <div class="time-frame">
+            <p><a href="#">Daily</a></p>
+            <p><a href="#">Weekly</a></p>
+            <p><a href="#">Monthly</a></p>
+          </div>
+        </div>
+        <div class="summary-cards">
+          <div class="row">
+            <div class="card" id="work">
+              <div class="icon">
+                <img src="./images/icon-work.svg" alt="" />
+              </div>
+              <div class="data">
+                <div class="data-title">
+                  <h3>Work</h3>
+                  <p>...</p>
+                </div>
+                5hrs
+                <!-- daily -->
+                Previous - 7hrs
+                <!-- daily -->
+              </div>
+            </div>
+            <div class="card" id="play">
+              <div class="icon">
+                <img src="./images/icon-play.svg" alt="" />
+              </div>
+              <div class="data">
+                <div class="data-title">
+                  <h3>Play</h3>
+                  <p>...</p>
+                </div>
+                1hr
+                <!-- daily -->
+                Previous - 2hrs
+                <!-- daily -->
+              </div>
+            </div>
 
-  Study
-  0hrs <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  4hrs <!-- weekly -->
-  Previous - 7hrs <!-- weekly -->
-  13hrs <!-- monthly -->
-  Previous - 19hrs <!-- monthly -->
+            <div class="card" id="study">
+              <div class="icon">
+                <img src="./images/icon-study.svg" alt="" />
+              </div>
+              <div class="data">
+                <div class="data-title">
+                  <h3>Study</h3>
+                  <p>...</p>
+                </div>
+                0hrs
+                <!-- daily -->
+                Previous - 1hr
+                <!-- daily -->
+              </div>
+            </div>
+          </div>
 
-  Exercise
-  1hr <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  4hrs <!-- weekly -->
-  Previous - 5hrs <!-- weekly -->
-  11hrs <!-- monthly -->
-  Previous - 18hrs <!-- monthly -->
+          <div class="row">
+            <div class="card" id="excercise">
+              <div class="icon">
+                <img src="./images/icon-exercise.svg" alt="" />
+              </div>
+              <div class="data">
+                <div class="data-title">
+                  <h3>Exercise</h3>
+                  <p>...</p>
+                </div>
+                1hr
+                <!-- daily -->
+                Previous - 1hr
+                <!-- daily -->
+              </div>
+            </div>
 
-  Social
-  1hr <!-- daily -->
-  Previous - 3hrs <!-- daily -->
-  5hrs <!-- weekly -->
-  Previous - 10hrs <!-- weekly -->
-  21hrs <!-- monthly -->
-  Previous - 23hrs <!-- monthly -->
+            <div class="card" id="social">
+              <div class="icon">
+                <img src="./images/icon-social.svg" alt="" />
+              </div>
+              <div class="data">
+                <div class="data-title">
+                  <h3>Social</h3>
+                  <p>...</p>
+                </div>
+                1hr
+                <!-- daily -->
+                Previous - 3hrs
+                <!-- daily -->
+              </div>
+            </div>
 
-  Self Care
-  0hrs <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  2hrs <!-- weekly -->
-  Previous - 2hrs <!-- weekly -->
-  7hrs <!-- monthly -->
-  Previous - 11hrs <!-- monthly -->
+            <div class="card" id="self-care">
+              <div class="icon">
+                <img src="./images/icon-self-care.svg" alt="" />
+              </div>
+              <div class="data">
+                <div class="data-title">
+                  <h3>Self Care</h3>
+                  <p>...</p>
+                </div>
+                0hrs
+                <!-- daily -->
+                Previous - 1hr
+                <!-- daily -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Andr&eacute;s Court</a>.
+      </div>
+    </footer>
 
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    <script type="module" src="./js/app.js"></script>
+  </body>
 </html>
