@@ -22,9 +22,6 @@
         font-size: 11px;
         text-align: center;
       }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
 
       .attribution {
         color: var(--white);
@@ -50,9 +47,9 @@
             <img src="./images/image-jeremy.png" alt="jeremy photo" />
           </div>
           <div class="time-frame">
-            <p><a href="#">Daily</a></p>
-            <p><a href="#">Weekly</a></p>
-            <p><a href="#">Monthly</a></p>
+            <p><a href="#" id="js-daily">Daily</a></p>
+            <p><a href="#" id="js-weekly">Weekly</a></p>
+            <p><a href="#" id="js-monthly">Monthly</a></p>
           </div>
         </div>
         <div class="summary-cards">
@@ -66,10 +63,8 @@
                   <h3>Work</h3>
                   <p>...</p>
                 </div>
-                5hrs
-                <!-- daily -->
-                Previous - 7hrs
-                <!-- daily -->
+                <h2><span id="js-work-current"></span> hrs</h2>
+                <p>Previous - <span id="js-work-previous"></span> hrs</p>
               </div>
             </div>
             <div class="card" id="play">
@@ -81,10 +76,8 @@
                   <h3>Play</h3>
                   <p>...</p>
                 </div>
-                1hr
-                <!-- daily -->
-                Previous - 2hrs
-                <!-- daily -->
+                <h2><span id="js-play-current"></span> hr</h2>
+                <p>Previous - <span id="js-play-previous"></span> hrs</p>
               </div>
             </div>
 
@@ -97,10 +90,8 @@
                   <h3>Study</h3>
                   <p>...</p>
                 </div>
-                0hrs
-                <!-- daily -->
-                Previous - 1hr
-                <!-- daily -->
+                <h2><span id="js-study-current"></span> hrs</h2>
+                <p>Previous - <span id="js-study-previous"></span> hr</p>
               </div>
             </div>
           </div>
@@ -115,10 +106,8 @@
                   <h3>Exercise</h3>
                   <p>...</p>
                 </div>
-                1hr
-                <!-- daily -->
-                Previous - 1hr
-                <!-- daily -->
+                <h2><span id="js-exercise-current"></span> hr</h2>
+                <p>Previous - <span id="js-exercise-previous"></span> hr</p>
               </div>
             </div>
 
@@ -131,10 +120,8 @@
                   <h3>Social</h3>
                   <p>...</p>
                 </div>
-                1hr
-                <!-- daily -->
-                Previous - 3hrs
-                <!-- daily -->
+                <h2><span id="js-social-current"></span> hr</h2>
+                <p>Previous - <span id="js-social-previous"></span> hrs</p>
               </div>
             </div>
 
@@ -147,10 +134,8 @@
                   <h3>Self Care</h3>
                   <p>...</p>
                 </div>
-                0hrs
-                <!-- daily -->
-                Previous - 1hr
-                <!-- daily -->
+                <h2><span id="js-self-care-current"></span> hrs</h2>
+                <p>Previous - <span id="js-self-care-previous"></span> hr</p>
               </div>
             </div>
           </div>

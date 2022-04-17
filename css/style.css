@@ -36,7 +36,7 @@ footer {
   justify-content: center;
   align-items: center;
   height: 3rem;
-  background: #c8c8c8;
+  background: var(--very-dark-blue);
 }
 
 main {
@@ -51,6 +51,14 @@ main {
 h1 {
   margin-top: 0;
   font-weight: 500;
+}
+
+h2 {
+  color: var(--white);
+  font-weight: 300;
+  letter-spacing: 4px;
+  margin: 0;
+  font-size: 2rem;
 }
 
 .character-card p {
@@ -110,6 +118,10 @@ h1 {
   color: var(--white);
 }
 
+.time-frame .selected {
+  color: var(--white);
+}
+
 .summary-cards {
   width: 64%;
   display: flex;
@@ -119,10 +131,14 @@ h1 {
 .row {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.row:last-child {
+  margin-bottom: 0;
 }
 
 .card {
-  border: 1px solid var(--white);
   width: 32%;
   position: relative;
 }
@@ -143,6 +159,7 @@ h1 {
 .data-title {
   display: flex;
   justify-content: space-between;
+  color: var(--white);
 }
 
 #work,
@@ -151,9 +168,8 @@ h1 {
 #excercise,
 #social,
 #self-care {
-  padding: 40px 0 0;
+  padding: 30px 0 0;
   border-radius: var(--border-radius);
-  margin-bottom: 15px;
 }
 
 #work {
