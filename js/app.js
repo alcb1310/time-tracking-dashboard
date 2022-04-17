@@ -6,7 +6,10 @@ const monthly = document.getElementById("js-monthly");
 fetch("../data.json")
   .then((res) => res.json())
   .then((data) => {
-    return data.map((time) => personInfo.push(time));
+    return data.map((time) => {
+      personInfo.push(time);
+      setInfo("daily");
+    });
   });
 
 function setInfo(period) {

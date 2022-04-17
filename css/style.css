@@ -195,3 +195,40 @@ h2 {
 #self-care {
   background: var(--soft-orange);
 }
+
+@media (max-width: 400px) {
+  .container {
+    flex-direction: column;
+    width: 90%;
+  }
+
+  .character-card {
+    width: 98%;
+  }
+
+  .row {
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+
+  .summary-cards,
+  .card {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .time-frame {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .character-card .info {
+    flex-direction: row;
+  }
+
+  .character-card .info img {
+    order: -2;
+    width: 30%;
+    height: 30%;
+  }
+}
